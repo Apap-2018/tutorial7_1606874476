@@ -56,9 +56,9 @@ public class FlightController {
         return flight;
     }
 
-    @GetMapping(value= "/all")
-    public @ResponseBody List<FlightModel> viewAllFlight() {
-        List<FlightModel> flight = flightService.getAll();
-        return flight;
+    @GetMapping(value = "/all")
+    public List<FlightModel> viewAllFlight(){
+        List<FlightModel> allFlight = flightService.getAll();
+        return allFlight;
     }
 }
